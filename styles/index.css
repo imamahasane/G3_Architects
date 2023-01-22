@@ -1,6 +1,114 @@
-/*  */
+/* -----------------------------
+Common Styles or Utilities Start
+-------------------------------- */
 * {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	max-width: 1200px;
+	margin: 0 auto;
 }
+html {
+	/* max-width: 1200px; */
+	/* margin: 0 auto; */
+}
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+/* -----------------------------
+Common Styles or Utilities End
+-------------------------------- */
+
+/* --------------------------
+  Header Section Style Start
+----------------------------- */
+.heading {
+	background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Navigation Section */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+.nav-title {
+	font-weight: 700;
+	font-size: 45px;
+	color: #131313;
+}
+nav ul {
+	display: flex;
+	gap: 40px;
+}
+nav li {
+	list-style: none;
+}
+nav li a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
+	color: #424242;
+}
+nav li a:hover {
+	background-color: gold;
+	padding: 5px 7px;
+	border-radius: 7px;
+}
+
+/* Banner Section */
+.banner {
+	margin-top: 102px;
+	display: flex;
+	flex-direction: column;
+}
+.banner__info {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.banner__info-title {
+	font-weight: 700;
+	font-size: 64px;
+	color: #131313;
+	margin-bottom: 25px;
+}
+.banner__info-desc {
+	font-weight: 400;
+	font-size: 16px;
+	color: #727272;
+	margin-bottom: 32px;
+}
+.banner__info-btn {
+	font-weight: 600;
+	font-size: 20px;
+	color: #ffffff;
+	border: none;
+	padding: 21px 25px;
+	background-color: #ff900e;
+	border-radius: 8px;
+}
+.banner__img img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+/* --------------------------
+  Header Section Style End
+----------------------------- */
+
+/* --------------------------
+  Main Section Style Start
+----------------------------- */
+
+/* --------------------------
+  Main Section Style End
+----------------------------- */
+
+/* --------------------------
+  Footer Section Style Start
+----------------------------- */
+
+/* --------------------------
+  Footer Section Style End
+----------------------------- */
