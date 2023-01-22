@@ -15,6 +15,16 @@ html {
 body {
 	font-family: 'Work Sans', sans-serif;
 }
+
+.btn-primary {
+	font-weight: 600;
+	font-size: 20px;
+	color: #ffffff;
+	border: none;
+	padding: 21px 25px;
+	background-color: #ff900e;
+	border-radius: 8px;
+}
 /* -----------------------------
 Common Styles or Utilities End
 -------------------------------- */
@@ -80,17 +90,12 @@ nav li a:hover {
 	margin-bottom: 32px;
 }
 .banner__info-btn {
-	font-weight: 600;
-	font-size: 20px;
-	color: #ffffff;
-	border: none;
-	padding: 21px 25px;
-	background-color: #ff900e;
-	border-radius: 8px;
 }
+
 .banner__img img {
 	width: 100%;
 	border-radius: 8px;
+	padding-bottom: 45px;
 }
 
 /* --------------------------
@@ -101,6 +106,136 @@ nav li a:hover {
   Main Section Style Start
 ----------------------------- */
 
+/* Quick list */
+.quickList {
+	margin-top: 85px;
+	display: flex;
+	align-items: center;
+}
+.quickList__img {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+	margin-right: 73px;
+}
+.quickList__img img {
+	width: 100%;
+}
+.quickList__info {
+}
+.quickList__info-title {
+	font-weight: 500;
+	font-size: 45px;
+	margin-bottom: 24px;
+}
+.quickList__info-desc {
+	color: #727272;
+	margin-bottom: 32px;
+	font-weight: 400;
+	font-size: 16px;
+}
+.quickList__info-btn {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+/* love & enjoy */
+.loveEnjoy {
+	margin-top: 130px;
+	display: flex;
+}
+.loveEnjoy__info {
+	margin-right: 54px;
+	width: 586px;
+}
+.loveEnjoy__info-box-1 {
+	margin-bottom: 30px;
+}
+.loveEnjoy__info-box-1-title {
+	font-weight: 700;
+	font-size: 45px;
+	color: #131313;
+	margin-bottom: 24px;
+}
+.loveEnjoy__info-box-1-desc {
+	color: #727272;
+}
+
+.loveEnjoy__info-box-2 {
+}
+.loveEnjoy__info-box-2-grid {
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+.loveEnjoy__info-box-2-grid-title {
+	font-weight: 600;
+	font-size: 20px;
+	color: #131313;
+	margin-bottom: 10px;
+}
+.loveEnjoy__info-box-2-grid-desc {
+	font-weight: 400;
+	font-size: 16px;
+	color: #727272;
+}
+
+.loveEnjoy__img {
+}
+.loveEnjoy__img img {
+	width: 100%;
+}
+
+/* Some Facts Section Style */
+.someFact {
+	margin-top: 130px;
+}
+.someFact__title {
+	font-weight: 700;
+	font-size: 45px;
+	color: #131313;
+	margin-bottom: 24px;
+}
+.someFact__dest {
+	font-weight: 400;
+	font-size: 16px;
+	color: #727272;
+}
+
+/* Portfolio Section Style */
+.portfolio {
+	margin-top: 100px;
+}
+.portfolio__container {
+  display: flex;
+}
+.portfolio__container-box {
+	width: 242px;
+	height: 242px;
+	border: 1px solid #ff900e;
+	border-radius: 8px;
+	padding: 45px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__container-box img {
+	font-size: 45px;
+	margin-bottom: 10px;
+}
+.portfolio__container-box-number {
+	font-weight: 600;
+	font-size: 45px;
+	color: #424242;
+	margin-bottom: 5px;
+}
+.portfolio__container-box-desc {
+	font-weight: 600;
+	/* font-size: 20px; */
+	color: #727272;
+}
 /* --------------------------
   Main Section Style End
 ----------------------------- */
