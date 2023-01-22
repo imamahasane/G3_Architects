@@ -268,7 +268,33 @@ nav li a:hover {
 /* --------------------------
   Footer Section Style Start
 ----------------------------- */
-
+.footer{
+  margin-top: 130px;
+  background: #FFF4E7;
+border-radius: 8px;
+}
+.footer__data{
+  padding: 38px 0;
+  text-align: center;
+  color: #424242;
+}
+.footer__data a{
+  text-decoration: none;
+  /* color: #424242; */
+}
+.footer__data a:hover{
+  background-color: gold;
+  padding: 5px;
+  border-radius: 8px;
+}
 /* --------------------------
   Footer Section Style End
+----------------------------- */
+
+/* --------------------------
+  Media Query Start
+----------------------------- */
+
+/* --------------------------
+  Media Query End
 ----------------------------- */
