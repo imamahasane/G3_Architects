@@ -113,10 +113,14 @@ nav li a:hover {
 	align-items: center;
 }
 .quickList__img {
+	width: 100%;
+}
+.quickList__img ul {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 24px;
 	margin-right: 73px;
+	list-style: none;
 }
 .quickList__img img {
 	width: 100%;
@@ -182,14 +186,31 @@ nav li a:hover {
 }
 
 .loveEnjoy__img {
+	position: relative;
 }
 .loveEnjoy__img img {
 	width: 100%;
+}
+.loveEnjoy__img-btn {
+	color: #ffffff;
+	background-color: #ff900e;
+	border-radius: 8px;
+	border: none;
+	padding: 46px 42px;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.loveEnjoy__img-btn span {
+	font-weight: 700;
+	font-size: 65px;
 }
 
 /* Some Facts Section Style */
 .someFact {
 	margin-top: 130px;
+	text-align: center;
 }
 .someFact__title {
 	font-weight: 700;
@@ -261,6 +282,28 @@ nav li a:hover {
 .sponsor__img img {
 	width: 165px;
 }
+
+/* Previous Works */
+.previousWorks {
+	margin-top: 130px;
+}
+.section-title {
+	font-weight: 700;
+	font-size: 45px;
+	color: #131313;
+	margin-bottom: 24px;
+	text-align: center;
+}
+.works {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+.work {
+}
+.work img {
+	width: 100%;
+}
 /* --------------------------
   Main Section Style End
 ----------------------------- */
@@ -268,24 +311,24 @@ nav li a:hover {
 /* --------------------------
   Footer Section Style Start
 ----------------------------- */
-.footer{
-  margin-top: 130px;
-  background: #FFF4E7;
-border-radius: 8px;
+.footer {
+	margin-top: 130px;
+	background: #fff4e7;
+	border-radius: 8px;
 }
-.footer__data{
-  padding: 38px 0;
-  text-align: center;
-  color: #424242;
+.footer__data {
+	padding: 38px 0;
+	text-align: center;
+	color: #424242;
 }
-.footer__data a{
-  text-decoration: none;
-  /* color: #424242; */
+.footer__data a {
+	text-decoration: none;
+	/* color: #424242; */
 }
-.footer__data a:hover{
-  background-color: gold;
-  padding: 5px;
-  border-radius: 8px;
+.footer__data a:hover {
+	background-color: gold;
+	padding: 5px;
+	border-radius: 8px;
 }
 /* --------------------------
   Footer Section Style End
@@ -294,7 +337,98 @@ border-radius: 8px;
 /* --------------------------
   Media Query Start
 ----------------------------- */
+/* For Mobile  */
+@media screen and (max-width: 688px) {
+	nav {
+		flex-direction: column;
+	}
+	.nav-title {
+		margin-bottom: 10px;
+	}
+	nav ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
 
+	.nav-title,
+	.banner__info-title,
+	.quickList__info-title,
+	.loveEnjoy__info-box-1-title,
+	.someFact__title,
+	.section-title,
+	.sponsor__info-title {
+		font-weight: 600;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.quickList {
+		flex-direction: column-reverse;
+	}
+	.quickList__info-title,
+	.quickList__info-desc {
+		text-align: center;
+	}
+	.quickList__info-btn {
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+	.quickList__img ul {
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0 10px;
+	}
+	.quickList__img li {
+		align-items: center;
+	}
+
+	.loveEnjoy {
+		flex-direction: column-reverse;
+	}
+	.loveEnjoy__img {
+		margin: 0 10px;
+    text-align: center;
+	}
+	.loveEnjoy__img img {
+		width: 100%;
+	}
+	.loveEnjoy__info {
+		width: 100%;
+	}
+	.loveEnjoy__info-box-1-title {
+		padding: 0 10px;
+	}
+
+	.loveEnjoy__img-btn {
+		position: relative;
+		margin: 20px 0;
+	}
+	.loveEnjoy__img-btn span {
+		font-weight: 500;
+		font-size: 45px;
+	}
+	.someFact__dest {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.loveEnjoy__info-box-1-desc {
+		text-align: center;
+		padding: 0 10px;
+	}
+	.portfolio__container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 25px;
+	}
+	.sponsor__img {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 35px;
+	}
+	.works {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
 /* --------------------------
   Media Query End
 ----------------------------- */
