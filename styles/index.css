@@ -132,6 +132,12 @@ nav li a:hover {
 	font-size: 45px;
 	margin-bottom: 24px;
 }
+.quick__text-1 {
+	color: #727272;
+}
+.quick__text-2 {
+	color: #ff900e;
+}
 .quickList__info-desc {
 	color: #727272;
 	margin-bottom: 32px;
@@ -366,13 +372,16 @@ nav li a:hover {
 	.quickList {
 		flex-direction: column-reverse;
 	}
+	.quickList__info {
+		text-align: center;
+	}
 	.quickList__info-title,
 	.quickList__info-desc {
 		text-align: center;
+		margin: 0 10px;
 	}
 	.quickList__info-btn {
-		margin-left: 20px;
-		margin-bottom: 20px;
+		margin: 20px 0;
 	}
 	.quickList__img ul {
 		grid-template-columns: repeat(1, 1fr);
@@ -387,7 +396,7 @@ nav li a:hover {
 	}
 	.loveEnjoy__img {
 		margin: 0 10px;
-    text-align: center;
+		text-align: center;
 	}
 	.loveEnjoy__img img {
 		width: 100%;
@@ -427,6 +436,8 @@ nav li a:hover {
 	}
 	.works {
 		grid-template-columns: repeat(1, 1fr);
+		margin: 0 10px;
+		text-align: center;
 	}
 }
 /* --------------------------
