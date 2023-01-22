@@ -310,6 +310,9 @@ nav li a:hover {
 .work img {
 	width: 100%;
 }
+.work__desc {
+	text-align: center;
+}
 /* --------------------------
   Main Section Style End
 ----------------------------- */
